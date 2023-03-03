@@ -2,10 +2,10 @@
 
 const cart = {
     items : [],
+    count  : 0,
     get totalPrice() {
        return this.calculateItemPrice();
     },
-    count  : 0,
     add(productName, productPrice, productQuantity = 1) {
         this.items.push({
             name: productName,
